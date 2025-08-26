@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Header from './components/Header.tsx';
 import ProjectList from './components/ProjectList.tsx';
 import Footer from './components/Footer.tsx';
@@ -26,8 +26,12 @@ const App = () => {
 
   const [isBooting, setIsBooting] = useState(true);
 
+  const handleBootingFinished = useCallback(() => {
+    setIsBooting(false);
+  }, []);
+
   if (isBooting) {
-    return <Preloader onFinished={() => setIsBooting(false)} />;
+    return <Preloader onFinished={handleBootingFinished} />;
   }
 
 
