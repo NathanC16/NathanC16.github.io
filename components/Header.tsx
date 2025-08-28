@@ -17,7 +17,7 @@ const Header = () => {
         target="_blank" 
         rel="noopener noreferrer"
         aria-label="GitHub Profile"
-        className="absolute top-4 left-4 z-10 flex items-center gap-2 rounded-sm border border-transparent p-2 text-[#ff00c1] transition-all duration-300 group shadow-[0_0_8px_rgba(255,0,193,0.4)] hover:border-[#ff00c1] hover:bg-[#ff00c1]/10 hover:text-white hover:shadow-[0_0_25px_rgba(255,0,193,0.9)]"
+        className="absolute top-4 left-4 z-20 flex items-center gap-2 rounded-sm border border-transparent p-2 text-[#ff00c1] transition-all duration-300 group shadow-[0_0_8px_rgba(255,0,193,0.4)] hover:border-[#ff00c1] hover:bg-[#ff00c1]/10 hover:text-white hover:shadow-[0_0_25px_rgba(255,0,193,0.9)]"
       >
         <GithubIcon className="h-5 w-5" />
         <span className="hidden sm:inline text-sm group-hover:underline">NathanC16</span>
