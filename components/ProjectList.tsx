@@ -20,7 +20,7 @@ const ProjectList = ({ projects }) => {
             <p className="text-lg">{t.emptyProjectList}</p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 gap-6 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
