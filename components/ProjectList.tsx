@@ -24,7 +24,7 @@ const ProjectList = ({ projects }) => {
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
-            <div className="group relative border border-dashed border-gray-600 bg-black/20 p-4 transition-all duration-300 flex flex-col h-full hover:border-[#ff00c1] hover:shadow-[0_0_20px_rgba(255,0,193,0.5)]">
+            <div className="group relative border border-dashed border-gray-600 bg-black/20 p-4 transition-all duration-300 flex flex-col h-full hover:border-[#ff00c1] hover:shadow-[0_0_20px_rgba(255,0,193,0.5)] md:border-l md:border-r-0 md:border-t-0 md:border-b-0 md:pl-6">
               <p className="text-xs text-gray-400 mb-1">-rw-r--r-- 1 guest guest 0 {new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit' })}</p>
               <h3 className="text-xl font-bold text-gray-500 mb-2 group-hover:text-[#ff00c1] transition-colors duration-300">{t.newProjectsTitle}</h3>
               <p className="text-gray-400 text-sm mb-4">{t.newProjectsDescription}</p>
