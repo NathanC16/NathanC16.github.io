@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "QR Code Generator",
+      "pt": "Gerador de QR Code"
+    },
+    "description": {
+        "en": "A simple QR Code generator using Python and Tkinter.",
+        "pt": "Um gerador de QR Code simples usando Python e Tkinter."
+    },
+    "techStack": ["Python", "Tkinter", "qrcode", "Pillow"],
+    "githubUrl": "https://github.com/NathanC16/QRCode-generator"
+  }
+]

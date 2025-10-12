@@ -4,25 +4,11 @@ import Header from './components/Header.tsx';
 import ProjectList from './components/ProjectList.tsx';
 import Footer from './components/Footer.tsx';
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
-import { translations } from './lib/translations.js';
 import Preloader from './components/Preloader.tsx';
+import projectsData from './projects.json';
 
 const App = () => {
-  const [projects, setProjects] = useState([
-    {
-      id: 1,
-      name: {
-        en: translations.en.projectQrCodeName,
-        pt: translations.pt.projectQrCodeName,
-      },
-      description: {
-          en: translations.en.projectQrCodeDescription,
-          pt: translations.pt.projectQrCodeDescription,
-      },
-      techStack: ['Python', 'Tkinter', 'qrcode', 'Pillow'],
-      githubUrl: 'https://github.com/NathanC16/QRCode-generator',
-    }
-  ]);
+  const [projects, setProjects] = useState(projectsData);
 
   const [isBooting, setIsBooting] = useState(true);
 
