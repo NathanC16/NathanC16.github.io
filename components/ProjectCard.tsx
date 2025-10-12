@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import FolderIcon from './icons/FolderIcon.tsx';
 import GithubIcon from './icons/GithubIcon.tsx';
+import LinkIcon from './icons/LinkIcon.tsx';
 import { LanguageContext } from '../contexts/LanguageContext.tsx';
 
 const ProjectCard = ({ project }) => {
@@ -21,7 +22,10 @@ const ProjectCard = ({ project }) => {
         <FolderIcon style={{ width: '2rem', height: '2rem' }} className="text-[#00f0ff]" />
         <div className="flex items-center gap-3">
           {project.githubUrl && (
-            <GithubIcon className="w-5 h-5 text-[#ff00c1] group-hover:text-white transition-colors duration-300" />
+            <>
+              <GithubIcon className="w-5 h-5 text-[#ff00c1] group-hover:text-white transition-colors duration-300" />
+              <LinkIcon className="w-5 h-5 text-[#ff00c1] group-hover:text-white transition-colors duration-300" />
+            </>
           )}
         </div>
       </div>
