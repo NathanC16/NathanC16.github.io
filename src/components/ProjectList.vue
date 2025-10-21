@@ -21,7 +21,7 @@ const projects = ref<any[]>([]);
 
 onMounted(async () => {
   try {
-    const response = await fetch('/projects.json');
+    const response = await fetch('projects.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
