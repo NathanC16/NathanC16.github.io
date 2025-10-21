@@ -1,4 +1,23 @@
-export const translations = {
+interface Translation {
+  portfolioTitle: string;
+  commandLine: string;
+  projectsTitle: string;
+  emptyProjectList: string;
+  footerProcessComplete: string;
+  projectQrCodeName: string;
+  projectQrCodeDescription: string;
+  newProjectsTitle: string;
+  newProjectsDescription: string;
+  newProjectsStatus: string;
+  newProjectsError: string;
+}
+
+interface Translations {
+  en: Translation;
+  pt: Translation;
+}
+
+export const translations: Translations = {
   en: {
     portfolioTitle: './PORTFOLIO',
     commandLine: './list_projects.sh',

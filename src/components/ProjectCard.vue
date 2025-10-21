@@ -32,7 +32,7 @@ const props = defineProps({
   },
 });
 
-const { language, translations: t } = useLanguage();
+const { language } = useLanguage();
 
 const projectName = computed(() => {
   return language.value === 'pt' ? props.project.name_pt : props.project.name_en;

@@ -7,5 +7,5 @@
 <script setup lang="ts">
 import { useLanguage } from '../composables/useLanguage';
 
-const { translations: t } = useLanguage();
+const { t } = useLanguage();
 </script>

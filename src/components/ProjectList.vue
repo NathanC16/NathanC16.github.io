@@ -15,7 +15,7 @@ import { ref, onMounted } from 'vue';
 import ProjectCard from './ProjectCard.vue';
 import { useLanguage } from '../composables/useLanguage';
 
-const { translations: t } = useLanguage();
+const { t } = useLanguage();
 
 const projects = ref<any[]>([]);
 
