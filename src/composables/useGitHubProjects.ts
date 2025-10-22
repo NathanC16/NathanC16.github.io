@@ -26,7 +26,7 @@ export function useGitHubProjects(username: string) {
       const data: GitHubRepo[] = await response.json();
       // Filter out forks and sort by updated_at
       projects.value = data
-        .filter(repo => !repo.fork)
+        .filter(repo => !repo.fork && repo.name !== 'NathanC16.github.io')
         .sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
     } catch (err: any) {
       error.value = err.message;
